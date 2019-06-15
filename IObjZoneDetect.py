@@ -57,7 +57,7 @@ def addRectangle(im,boxes):
         cv2.putText(im, "%s:%.2f"%(box["cls"],box["score"]),(zone[0],zone[1]),font,1,(0,255,0))
 
 def run():
-    model_dir = "/root/models/"
+    model_dir = "./models/"
     detector = ICartwheelZoneDetect(model_dir)
 
     picdir = "/root/testpic/cartwheel/"
